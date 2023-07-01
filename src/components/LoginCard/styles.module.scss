@@ -1,0 +1,57 @@
+.card {
+    width: 475px;
+    height: 550px;
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    .logoWrapper {
+        margin: 44px 74px 44px 66px;
+    }
+
+    h2 {
+        color: $black;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0px 194px 8px 194px;
+    }
+
+    .info {
+        color: $gray-600;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0px 78px 0px 78px;
+    }
+
+    .linkTitle {
+        color: $gray-600;
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin: 28px 98px 28px 98px;
+    }
+    .link {
+        display: inline;
+        color: $orange;
+        margin-left: 0.3ch;
+        text-decoration: underline;
+    }
+
+    form {
+        margin: 50px 30px 0px 30px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .inputWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 415px;
+        }
+    }
+}

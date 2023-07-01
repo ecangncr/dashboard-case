@@ -1,0 +1,13 @@
+@use "reset" as *;
+
+body {
+  background: linear-gradient(49deg, $orange 0%, $yellow 100%);
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

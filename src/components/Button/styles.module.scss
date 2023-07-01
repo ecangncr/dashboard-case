@@ -1,0 +1,18 @@
+.button {
+    border-radius: 4px;
+    background: #feaf00;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
