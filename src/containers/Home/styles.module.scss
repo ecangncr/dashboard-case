@@ -1,6 +1,71 @@
 .home {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.title {
+    color: $gray-600;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.count {
+    color: $black;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+%card {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 157px;
+    border-radius: 8px;
+    padding: 20px;
+    svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.students {
+    @extend %card;
+    background-color: $light-blue;
+
+    svg {
+        color: $blue;
+    }
+}
+
+.course {
+    @extend %card;
+    background-color: $light-pink;
+
+    svg {
+        color: $pink;
+    }
+}
+
+.payments {
+    @extend %card;
+    background-color: $light-yellow;
+
+    svg {
+        color: $orange;
+    }
+}
+
+.users {
+    @extend %card;
+    background: linear-gradient(134deg, $orange 0%, $yellow 100%);
+
+    .title,
+    svg {
+        color: $white;
+    }
 }

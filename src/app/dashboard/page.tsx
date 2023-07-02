@@ -1,3 +1,5 @@
-export default function Home(props: any) {
-  return <div>Dashboard Home</div>;
+import Home from "@/containers/Home";
+
+export default function Page() {
+  return <Home />;
 }
