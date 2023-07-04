@@ -14,7 +14,7 @@ export const getUsersRequest = (
   ).then((response) => response.json());
 };
 
-export const getUsersQuery = (
+export const useGetUsersQuery = (
   search: string,
   limit: string | number,
   skip: string | number

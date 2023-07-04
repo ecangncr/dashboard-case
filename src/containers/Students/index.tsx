@@ -1,6 +1,6 @@
 "use client";
 import Table from "@/components/Table";
-import { getUsersQuery } from "@/services";
+import { useGetUsersQuery } from "@/services";
 import { useCustomParams } from "@/utils";
 import { useEffect } from "react";
 import { debounce } from "lodash";
@@ -11,7 +11,7 @@ export default function Students() {
   const limit = searchParams.get("limit") || 6;
   const page = Number(searchParams.get("page")) || 1;
 
-  const { data, refetch, isFetching } = getUsersQuery(
+  const { data, refetch, isFetching } = useGetUsersQuery(
     search,
     limit,
     Number(page - 1) * Number(limit)
