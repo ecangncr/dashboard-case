@@ -1,0 +1,62 @@
+.tableFooter {
+    display: flex;
+    margin-top: 30px;
+    align-self: end;
+    justify-content: center;
+    align-items: center;
+
+    .rowsArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            color: $gray-500;
+
+            font-size: 14px;
+
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+        }
+        select {
+            margin-left: 8px;
+            margin-right: 3px;
+
+            color: #4b506d;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            outline: none;
+            background: transparent;
+            appearance: none;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .pageCount {
+        color: #9fa2b4;
+
+        font-size: 14px;
+
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+
+        margin-right: 24px;
+        margin-left: 48px;
+    }
+
+    .iconArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        button {
+            color: $gray-500;
+        }
+    }
+}

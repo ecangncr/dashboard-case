@@ -5,6 +5,7 @@ import FileChartIcon from "@/components/Icons/FileChart";
 import UsdSquareIcon from "@/components/Icons/SignOut";
 import SlidersSquareIcon from "@/components/Icons/SlidersSquare";
 import SignOutIcon from "@/components/Icons/SignOut";
+import { constant } from "lodash";
 
 export const navigation = [
   {
@@ -16,7 +17,7 @@ export const navigation = [
   {
     id: "course",
     text: "Course",
-    href: "/dashboard/course",
+    href: "#",
     icon: <BookmarkIcon />,
   },
   {
@@ -28,19 +29,19 @@ export const navigation = [
   {
     id: "payment",
     text: "Payment",
-    href: "/dashboard/payment",
+    href: "#",
     icon: <UsdSquareIcon />,
   },
   {
     id: "report",
     text: "Report",
-    href: "/dashboard/report",
+    href: "#",
     icon: <FileChartIcon />,
   },
   {
     id: "settings",
     text: "Settings",
-    href: "/dashboard/settings",
+    href: "#",
     icon: <SlidersSquareIcon />,
   },
   {
@@ -50,3 +51,5 @@ export const navigation = [
     icon: <SignOutIcon />,
   },
 ];
+
+export const BASE_URL = "https://dummyjson.com/users";

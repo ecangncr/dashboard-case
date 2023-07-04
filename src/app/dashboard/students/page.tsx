@@ -1,3 +1,5 @@
+import Students from "@/containers/Students";
+
 export default function Page() {
-  return <div>Students Page</div>;
+  return <Students />;
 }

@@ -1,0 +1,76 @@
+@use "@/styles/components" as *;
+
+.headWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid $gray-200;
+
+    h3 {
+        color: $black;
+        font-size: 22px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .input {
+        @extend .input;
+        width: 212px;
+        height: 37px;
+        border-radius: 8px;
+        flex-shrink: 0;
+        &::placeholder {
+            font-size: 14px;
+
+            color: $gray-400;
+        }
+    }
+
+    .inputArea {
+        position: relative;
+    }
+
+    .button {
+        @extend .button;
+        width: 199px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+
+    .searchIcon {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        width: 14px;
+        height: 14px;
+        transform: translateY(-50%);
+        color: $gray-400;
+    }
+}
+
+.thead {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    margin-right: 110px;
+    margin-left: 110px;
+    align-items: center;
+
+    h5 {
+        color: #acacac;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
